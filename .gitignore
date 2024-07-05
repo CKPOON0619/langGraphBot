@@ -1,0 +1,15 @@
+# Poetry dependencies
+poetry.lock
+
+# Python packages
+__pycache__/
+
+# IDE-specific files
+*.ipynb
+*.pyc
+*.swp
+
+# Virtual environment directories
+venv/
+.venv/
+.env
