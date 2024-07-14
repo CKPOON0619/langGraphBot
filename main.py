@@ -4,11 +4,11 @@ load_dotenv()
 
 from typing import List, Sequence
 from langchain_core.messages import BaseMessage, HumanMessage
-from chains import generation_chain, reflection_chain
+from chains.twitter_chains import generation_chain, reflection_chain
 from langgraph.graph import END, MessageGraph, MessagesState
 
 REFLECT = "reflect"
-GENERATE = "generate"
+GENERATE = "generate"   
 
 def generation_node(state: Sequence[BaseMessage]) -> List[BaseMessage]:
   # plug in the the state into messages placeholder to generate new message
