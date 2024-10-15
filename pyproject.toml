@@ -2,11 +2,11 @@
 name = "langgraphbot"
 version = "0.1.0"
 description = ""
-authors = ["kinp <CheukKin.Poon@lendscape.com>"]
+authors = ["kinp <ckpoon19890129@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = "^3.12.4"
 python-dotenv = "^1.0.1"
 black = "^24.4.2"
 isort = "^5.13.2"

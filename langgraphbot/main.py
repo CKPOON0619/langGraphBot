@@ -38,7 +38,7 @@ def reflection_node(messages: Sequence[BaseMessage]) -> List[BaseMessage]:
 builder = MessageGraph()
 builder.add_node(GENERATE, generation_node)
 builder.add_node(REFLECT, reflection_node)
-builder.set_entry_point(GENERATE)
+builder.set_entry_point(REFLECT)
 
 # Conditional edge
 def should_continue(state: List[BaseMessage]):

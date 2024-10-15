@@ -1,16 +1,9 @@
-from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder\
-
-# from langchain_openai import ChatOpenAI
-# llm = ChatOpenAI()
-
-# from llm.huggingfacellm import hugging_llm
-# llm = hugging_llm
-
+from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 import langchain
 from llm.ollamallm import ollama_llm
+
 llm=ollama_llm
 langchain.verbose = True
-
 
 reflection_prompt = ChatPromptTemplate.from_messages(
   [
