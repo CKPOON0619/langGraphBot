@@ -6,10 +6,17 @@ ollama_llm = ChatOllama(
     temperature=0.7     # Set the temperature parameter
 )
 
+hot_ollama_llm = ChatOllama(
+    model="llama3",  # Specify the model you want to use
+    temperature=1     # Set the temperature parameter
+)
 
-# # Define a simple prompt to test the model
-# prompt = "Tell me a joke about computers."
+cool_ollama_llm = ChatOllama(
+    model="llama3",  # Specify the model you want to use
+    temperature=0.3     # Set the temperature parameter
+)
 
-# # Send the prompt to the model and print the response
-# response = ollama_llm.invoke(prompt)
-# print(response)
+static_ollama_llm = ChatOllama(
+    model="llama3",  # Specify the model you want to use
+    temperature=0     # Set the temperature parameter
+)
