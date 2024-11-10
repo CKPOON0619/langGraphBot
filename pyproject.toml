@@ -2,11 +2,12 @@
 name = "langgraphbot"
 version = "0.1.0"
 description = ""
-authors = ["kinp <CheukKin.Poon@lendscape.com>"]
+authors = ["kinp <ckpoon19890129@gmail.com>"]
 readme = "README.md"
+packages = [{ include = "src" }]  
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = "^3.12.4"
 python-dotenv = "^1.0.1"
 black = "^24.4.2"
 isort = "^5.13.2"
@@ -19,6 +20,15 @@ grandalf = "^0.8"
 langchain-community = "^0.2.6"
 
 
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+pytest-cov = "^5.0.0"
+pytest-mock = "^3.14.0"
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+testpaths = ["**/tests"]
+pythonpath = ["."]
